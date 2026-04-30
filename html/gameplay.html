@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艾爾芙卡玩法介紹 | 三人編隊、地形等級與強化攻擊</title>
+    <meta name="description" content="了解艾爾芙卡正式版的核心玩法：三人編隊、戰前站位、地形 1 到 3 級規則、10 點行動點數，以及每位角色的強化攻擊條件。">
+    <link rel="icon" type="image/png" href="assets/images/LOGO.png">
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="assets/css/elvka-refresh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="site-body page-gameplay">
+    <div class="site-shell">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <img src="assets/images/LOGO.png" alt="艾爾芙卡標誌">
+                    <span class="brand-text">
+                        <span class="brand-title">艾爾芙卡 ELVKA</span>
+                        <span class="brand-subtitle">三人編隊 × 地形戰棋</span>
+                    </span>
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-label="切換導覽">
+                    <span></span>
+                </button>
+                <nav class="site-nav" id="site-nav" aria-label="主要導覽">
+                    <a href="index.html">首頁</a>
+                    <a href="world.html">世界展示</a>
+                    <a href="characters.html">角色展示</a>
+                    <a class="is-active" href="gameplay.html">玩法介紹</a>
+                    <a href="download.html">下載試玩</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="page-hero">
+                <div class="container page-hero-grid">
+                    <div class="page-copy">
+                        <span class="eyebrow">Gameplay / 正式版規則</span>
+                        <h1 class="page-title">先選三人、再排站位，<span class="accent">最後把高度與強化條件串起來</span></h1>
+                        <p class="page-lead">《艾爾芙卡》的核心玩法圍繞在陣容配置、站位策略與地形操控。玩家需要在戰鬥開始前完成三人配隊與部署，進場後再利用多層高度、技能改地與 10 點行動點數，逐步建立戰術優勢。</p>
+                        <div class="pill-row">
+                            <span>三人編隊</span>
+                            <span>戰前站位</span>
+                            <span>地形 1 到 3 級</span>
+                            <span>強化攻擊</span>
+                        </div>
+                    </div>
+                    <div class="page-visual">
+                        <img src="assets/images/elvka/cards/Xuanduo_C5ult.png" alt="艾爾芙卡代表技能卡構圖">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker">官方實戰影片</span>
+                        <h2>先看一場正式版實機，最快理解這套規則如何實際運作</h2>
+                        <p>影片裡最值得注意的是戰前佈位、高度爭奪、技能改地與強化攻擊的覆蓋時機如何接成同一個回合。</p>
+                    </div>
+
+                    <div class="video-showcase">
+                        <div class="video-frame" id="gameplay-video-frame" data-embed-src="https://www.youtube-nocookie.com/embed/glb0d_-3Oug?rel=0" data-watch-url="https://www.youtube.com/watch?v=glb0d_-3Oug" data-video-title="艾爾芙卡官方試玩影片"></div>
+                        <article class="surface-panel">
+                            <span class="section-kicker">觀看片段時可以注意</span>
+                            <h3 class="panel-title">誰先排出有利開局、誰先卡高地、誰先讓普通攻擊切換成強化攻擊</h3>
+                            <p class="lead-copy">正式版的節奏不是憑空爆發，而是來自角色條件、地形等級與行動點數分配被正確接在一起。</p>
+                            <div class="hero-actions">
+                                <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=glb0d_-3Oug" target="_blank" rel="noreferrer"><i class="fa-brands fa-youtube"></i>在 YouTube 開啟影片</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker">四大系統</span>
+                        <h2>正式企畫書把玩法拆成四套互相咬合的系統</h2>
+                    </div>
+
+                    <div class="metric-grid">
+                        <article class="info-card">
+                            <div class="card-icon"><i class="fa-solid fa-user-group"></i></div>
+                            <h3>隊伍編輯系統</h3>
+                            <p>每關都要從角色池挑出三名不重複角色，先把隊伍組合與初始站位排好。</p>
+                        </article>
+                        <article class="info-card">
+                            <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <h3>角色能力系統</h3>
+                            <p>每位角色都擁有技能與強化攻擊，且技能本身就會帶有改變地形高低的效果。</p>
+                        </article>
+                        <article class="info-card">
+                            <div class="card-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+                            <h3>地形變化系統</h3>
+                            <p>高度會決定加成、推落與引爆後果，普通攻擊與技能都會持續重寫戰場。</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker">回合流程</span>
+                        <h2>一場艾爾芙卡，通常會沿著這四個節點一路推進</h2>
+                    </div>
+
+                    <div class="timeline">
+                        <article class="timeline-step">
+                            <div class="timeline-index">1</div>
+                            <div class="timeline-copy">
+                                <h3 class="timeline-title">先組隊與佈位</h3>
+                                <p>從角色池挑出三人，並在指定區域安排初始位置，決定第一回合攻守線。</p>
+                            </div>
+                        </article>
+                        <article class="timeline-step">
+                            <div class="timeline-index">2</div>
+                            <div class="timeline-copy">
+                                <h3 class="timeline-title">爭奪高度</h3>
+                                <p>角色站上有利高度能觸發額外能力，也更容易把強化攻擊條件湊齊。</p>
+                            </div>
+                        </article>
+                        <article class="timeline-step">
+                            <div class="timeline-index">3</div>
+                            <div class="timeline-copy">
+                                <h3 class="timeline-title">改地形與推位</h3>
+                                <p>技能可以升高、降低或指定區域高度，普通攻擊也能把敵人推上去或推下來。</p>
+                            </div>
+                        </article>
+                        <article class="timeline-step">
+                            <div class="timeline-index">4</div>
+                            <div class="timeline-copy">
+                                <h3 class="timeline-title">分配行動點數</h3>
+                                <p>每回合 10 點行動點數可自由分配，決定你要集中單點爆發還是整隊同步推進。</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container split-layout">
+                    <div class="media-stack">
+                        <figure class="art-card">
+                            <img src="assets/images/elvka/cards/Jiangying_C4ult.png" alt="絳纓技能卡構圖">
+                            <figcaption class="art-caption"><i class="fa-solid fa-burst"></i>正式版的角色技能幾乎都和位移、高度與強化條件直接相連。</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="media-copy">
+                        <span class="section-kicker">地形規則</span>
+                        <h3>你操作的不只是角色，而是整個高度結構本身</h3>
+                        <p>正式企畫書把地形規則寫得非常具體。理解這些規則，才會知道為什麼某些回合看起來只是站位，其實已經在鋪後面的引爆或強化條件。</p>
+                        <ul class="bullet-list">
+                            <li>地形等級最低為 1，最高為 3。</li>
+                            <li>地形若被疊到 3 級以上，該行動結束後會從上方開始引爆，每次引爆 3 層直到低於 3。</li>
+                            <li>地形永遠不會低於 1 級。</li>
+                            <li>角色不能一次跨越高低差距 2 級以上的地形。</li>
+                            <li>從高等級 1 被推到等級 3 會彈回原位、受傷並引爆該地形；從等級 3 被推到等級 1 也會承受衰落傷害。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker">回合資源與條件</span>
+                        <h2>真正的操作重點，是用 10 點行動把條件換成優勢</h2>
+                    </div>
+
+                    <div class="feature-grid">
+                        <article class="info-card">
+                            <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <h3>10 點行動點數</h3>
+                            <p>移動、攻擊與技能都會消耗行動點。只要點數足夠，同一角色也能在單回合內連續推進。</p>
+                        </article>
+                        <article class="info-card">
+                            <div class="card-icon"><i class="fa-solid fa-sword"></i></div>
+                            <h3>強化攻擊覆蓋普通攻擊</h3>
+                            <p>當角色達成指定高度或條件時，普通攻擊會被強化攻擊覆蓋。這有時是爆發窗口，有時也可能反成限制。</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <article class="quote-panel">
+                        <p>正式版的艾爾芙卡，不是先把人送上前線再看情況，而是從配隊、站位、地形到行動點數，一整回合都必須先算好。</p>
+                        <span>玩法核心</span>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-panel">
+                <section>
+                    <h2 class="footer-title">艾爾芙卡 ELVKA</h2>
+                    <p class="footer-copy">三人編隊、地形等級、強化攻擊與 10 點行動點數，共同構成正式版的戰術骨架。</p>
+                </section>
+                <section>
+                    <h3 class="panel-title">頁面導覽</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="world.html">世界展示</a></li>
+                        <li><a href="characters.html">角色展示</a></li>
+                        <li><a href="download.html">下載試玩</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="panel-title">開發資訊</h3>
+                    <p class="footer-meta">團隊：結束樂隊</p>
+                    <p class="footer-meta">指導教授：廖世傑、吳思璿</p>
+                    <p class="footer-meta">聯絡信箱：elvka.game@gmail.com</p>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/page-transitions.js"></script>
+    <script src="assets/js/video-embeds.js"></script>
+    <script src="assets/js/site-motion.js"></script>
+</body>
+</html>
