@@ -1,29 +1,33 @@
-# 琉波傳說 - 遊戲介紹網頁
+# 艾爾芙卡 - 遊戲介紹網站
 
 ## 專案簡介
 
-基於您提供的HTML模板和遊戲企畫書資源，我已經為您創建了一個完整的遊戲介紹網頁。這個網頁展示了"琉波傳說"這款像素風格遊戲的詳細資訊。
+目前網站已整理為可直接部署到儲存庫根目錄的靜態站，適合 GitHub Pages 與 GitHub 組織站網址直接對外提供。首頁與所有主要頁面都位於最外層，資源則集中在 assets 目錄。
 
 ## 檔案結構
 
 ```
-html/
-├── my-game.html                 # 主要的遊戲介紹頁面
+game_web/
+├── index.html                   # 首頁
+├── world.html                   # 世界展示
+├── characters.html              # 角色展示
+├── gameplay.html                # 玩法介紹
+├── download.html                # 下載試玩
+├── 404.html                     # 錯誤頁
+├── favicon.ico
+├── _headers                     # 靜態站標頭設定
+├── _redirects                   # 靜態站導向設定
 ├── assets/
 │   ├── css/
-│   │   ├── game-custom.css      # 自定義遊戲樣式
-│   │   ├── style.css            # 原始模板樣式
-│   │   └── responsive.css       # 響應式樣式
 │   ├── images/
-│   │   ├── LOGO.png             # 遊戲Logo
-│   │   ├── 琉波像素小人(大圖)_0.png # 主角圖片
-│   │   ├── 舞獅_0.png            # 舞獅守護者圖片
-│   │   ├── 鐮刀_0.png            # 武器圖片
-│   │   ├── ELVKA.png            # 開發團隊Logo
-│   │   └── IG_0.png             # Instagram圖標
-│   └── js/
-│       ├── custom.js            # 原始JavaScript
-│       └── plugins/             # JavaScript插件
+│   ├── js/
+│   └── media/
+├── builds/                      # 試玩包輸出目錄
+├── resource/                    # 原始企劃與素材來源
+├── tools/
+├── README.md
+├── .gitignore
+└── .nojekyll                    # GitHub Pages 停用 Jekyll 處理
 ```
 
 ## 主要功能
@@ -66,14 +70,14 @@ html/
 
 ## 使用方法
 
-1. **直接訪問**: 在瀏覽器中打開 `my-game.html`
+1. **直接訪問**: 在瀏覽器中打開 `index.html`
 2. **本地服務器**: 使用任何Web服務器（如Live Server）提供服務
-3. **自定義內容**: 修改HTML中的文字內容以符合您的需求
+3. **GitHub Pages / 組織站**: 直接以儲存庫根目錄發布，網址會從根目錄的 `index.html` 進站
 
 ## 自定義指南
 
 ### 修改文字內容
-在 `my-game.html` 中找到相應的文字區塊進行修改：
+在 `index.html` 或其他同層頁面中找到相應的文字區塊進行修改：
 
 ```html
 <h1 class="display-4 mb-4">琉波傳說</h1>

@@ -9,7 +9,7 @@
 - **Branch**: `main`
 
 ### 建構設置
-- **Root Directory**: `html`
+- **Root Directory**: `.`
 - **Build Command**: `# No build command needed`
 - **Publish Directory**: `.`
 
@@ -38,7 +38,7 @@
 - ✅ QR Code: `/assets/images/elvka/ig-qrcode.png`
 
 ### 3. 重定向設置
-創建 `_redirects` 檔案在 html 目錄中：
+創建 `_redirects` 檔案在專案根目錄：
 
 ```
 # 首頁
@@ -49,7 +49,7 @@
 ```
 
 ### 4. 標頭設置
-創建 `_headers` 檔案在 html 目錄中：
+創建 `_headers` 檔案在專案根目錄：
 
 ```
 /*
@@ -92,6 +92,12 @@
 ## 自動部署
 
 每次推送到 `main` 分支時，Render 會自動重新部署網站。
+
+## GitHub Pages 備註
+
+- 若改用 GitHub Pages 或 GitHub 組織站，請直接從儲存庫根目錄發布。
+- `.nojekyll` 建議保留在根目錄，避免 GitHub Pages 對底線開頭檔案做 Jekyll 過濾。
+- GitHub Pages 不會套用 `_headers` 與 `_redirects` 的規則；這兩個檔案主要給 Render / Netlify 類靜態主機使用。
 
 ## 監控
 

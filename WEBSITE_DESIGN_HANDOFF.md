@@ -42,11 +42,11 @@
 
 目前正式 live pages 只有以下五頁：
 
-1. html/index.html
-2. html/world.html
-3. html/characters.html
-4. html/gameplay.html
-5. html/download.html
+1. index.html
+2. world.html
+3. characters.html
+4. gameplay.html
+5. download.html
 
 其他頁面都不再是主站內容核心。
 
@@ -101,7 +101,7 @@ Header 品牌文字固定為：
 ### 4.2 Logo 使用方式
 
 Logo 檔案：
-- html/assets/images/LOGO.png
+- assets/images/LOGO.png
 
 使用位置：
 - 每頁 favicon
@@ -128,7 +128,7 @@ Logo 檔案：
 ### 5.1 全站共用變數
 
 主要定義在：
-- html/assets/css/elvka-refresh.css
+- assets/css/elvka-refresh.css
 
 全站基礎變數：
 - --bg: #07080d
@@ -333,7 +333,7 @@ Hero 內的特殊圖層：
 ## 9. 世界頁設計詳解
 
 頁面：
-- html/world.html
+- world.html
 
 定位：
 - 世界觀／故事背景展示頁
@@ -359,7 +359,7 @@ Hero 內的特殊圖層：
 ## 10. 角色頁設計詳解
 
 頁面：
-- html/characters.html
+- characters.html
 
 定位：
 - 角色資料庫
@@ -408,7 +408,7 @@ Hero 內的特殊圖層：
 ## 11. 玩法頁設計詳解
 
 頁面：
-- html/gameplay.html
+- gameplay.html
 
 定位：
 - 用較清楚的系統解說方式介紹玩法
@@ -458,7 +458,7 @@ Hero 內的特殊圖層：
 ## 12. 下載頁設計詳解
 
 頁面：
-- html/download.html
+- download.html
 
 定位：
 - 單一功能明確的 CTA 頁
@@ -505,7 +505,7 @@ Hero 內的特殊圖層：
 ### 13.2 頁面切換動態
 
 檔案：
-- html/assets/js/page-transitions.js
+- assets/js/page-transitions.js
 
 功能：
 - 攔截同源站內連結
@@ -526,7 +526,7 @@ Hero 內的特殊圖層：
 ### 13.3 Scroll reveal 系統
 
 檔案：
-- html/assets/js/site-motion.js
+- assets/js/site-motion.js
 
 功能：
 - 使用 IntersectionObserver
@@ -563,7 +563,7 @@ Hero 內的特殊圖層：
 ### 13.5 首頁粒子系統
 
 首頁使用：
-- html/assets/js/plugins/particles.js
+- assets/js/plugins/particles.js
 
 目前粒子效果：
 - 藍色點粒子
@@ -645,32 +645,32 @@ Header 底部有一條細 progress line：
 ### 15.1 重要圖片資產
 
 代表性圖片：
-- html/assets/images/LOGO.png
-- html/assets/images/elvka/xuanduo-poster.jpg
-- html/assets/images/elvka/hero-main.jpg
-- html/assets/images/elvka/creature.png
-- html/assets/images/elvka/ig-qrcode.png
+- assets/images/LOGO.png
+- assets/images/elvka/xuanduo-poster.jpg
+- assets/images/elvka/hero-main.jpg
+- assets/images/elvka/creature.png
+- assets/images/elvka/ig-qrcode.png
 
 角色立繪：
-- html/assets/images/elvka/characters/*.png
+- assets/images/elvka/characters/*.png
 
 角色頭像：
-- html/assets/images/elvka/heads/*.png
+- assets/images/elvka/heads/*.png
 
 技能卡：
-- html/assets/images/elvka/cards/*.png
+- assets/images/elvka/cards/*.png
 
 ### 15.2 GIF 資產
 
 角色 GIF 來源整理至：
-- html/assets/media/elvka/gifs/
+- assets/media/elvka/gifs/
 
 每位角色各自有子目錄，依原檔名保留 idle / attack / skill / grab / hit 等資訊。
 
 ### 15.3 本地影片資產
 
 角色技能與強化攻擊影片位於：
-- html/assets/media/elvka/*.mp4
+- assets/media/elvka/*.mp4
 
 角色頁會直接使用本地 video tag 播放。
 
@@ -685,8 +685,8 @@ Header 底部有一條細 progress line：
 - particles.js
 
 自製共用腳本：
-- html/assets/js/page-transitions.js
-- html/assets/js/site-motion.js
+- assets/js/page-transitions.js
+- assets/js/site-motion.js
 
 ## 17. 目前已知限制與注意事項
 
