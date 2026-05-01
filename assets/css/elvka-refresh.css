@@ -707,6 +707,8 @@ body.page-gameplay .surface-panel,
 body.page-gameplay .quote-panel,
 body.page-download .surface-panel,
 body.page-download .quote-panel,
+body.page-contact .surface-panel,
+body.page-contact .quote-panel,
 body.page-download .contact-panel {
     border-color: rgba(116, 214, 255, 0.16);
     background: linear-gradient(180deg, rgba(92, 163, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 26%, rgba(255, 255, 255, 0.02) 100%);
@@ -721,6 +723,8 @@ body.page-gameplay .surface-panel::before,
 body.page-gameplay .quote-panel::before,
 body.page-download .surface-panel::before,
 body.page-download .quote-panel::before,
+body.page-contact .surface-panel::before,
+body.page-contact .quote-panel::before,
 body.page-download .contact-panel::before {
     background: linear-gradient(156deg, rgba(168, 226, 255, 0.14), transparent 34%, transparent 64%, rgba(116, 214, 255, 0.12));
 }
@@ -1300,7 +1304,8 @@ body.page-download .contact-panel::before {
 body.page-world .section-heading,
 body.page-characters .section-heading,
 body.page-gameplay .section-heading,
-body.page-download .section-heading {
+body.page-download .section-heading,
+body.page-contact .section-heading {
     position: relative;
     padding-top: 18px;
 }
@@ -1308,7 +1313,8 @@ body.page-download .section-heading {
 body.page-world .section-heading::before,
 body.page-characters .section-heading::before,
 body.page-gameplay .section-heading::before,
-body.page-download .section-heading::before {
+body.page-download .section-heading::before,
+body.page-contact .section-heading::before {
     content: '';
     width: 84px;
     height: 2px;
@@ -1324,7 +1330,8 @@ body.page-download .section-heading::before {
 body.page-world .section-kicker,
 body.page-characters .section-kicker,
 body.page-gameplay .section-kicker,
-body.page-download .section-kicker {
+body.page-download .section-kicker,
+body.page-contact .section-kicker {
     background: rgba(116, 214, 255, 0.08);
     border-color: rgba(116, 214, 255, 0.18);
     color: #d6ebff;
@@ -2520,11 +2527,12 @@ body.page-download .section-kicker {
     }
 
     .hero-banner-art {
-        object-position: 6% 14%;
+        object-position: 8% 14%;
     }
 
     .hero-banner-inner {
-        padding: 54px 0 76px;
+        padding: 44px 0 62px;
+        justify-items: end;
     }
 
     .hero-copy--banner .display-title {
@@ -2545,12 +2553,24 @@ body.page-download .section-kicker {
     }
 
     .hero-copy--banner {
-        padding: 18px 14px 20px;
+        justify-self: end;
+        width: min(100%, 224px);
+        max-width: 224px;
+        gap: 12px;
+        padding: 0;
+        transform: none;
     }
 
     .hero-copy--banner::before {
-        inset: -10px -4px -12px -10px;
-        border-radius: 26px 54px 70px 22px;
+        display: none;
+    }
+
+    .hero-copy--banner::after {
+        display: none;
+    }
+
+    .hero-copy--banner > :not(.hero-actions) {
+        display: none;
     }
 
     .hero-copy-meta {
@@ -2559,19 +2579,16 @@ body.page-download .section-kicker {
         flex-direction: column;
     }
 
-    .hero-banner-note {
-        font-size: 0.88rem;
-    }
-
     .hero-typography-layer {
-        top: 6%;
-        right: -2px;
-        gap: 8px;
+        display: none;
     }
 
-    .hero-typography-word {
-        font-size: clamp(2.8rem, 12vw, 4.8rem);
-        letter-spacing: 0.12em;
+    .hero-actions {
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
     }
 
     .hero-typography-word--sub {
